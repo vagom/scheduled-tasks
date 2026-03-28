@@ -19,7 +19,7 @@ owm_endpoint = os.environ.get("OWM_ENDPOINT")
 # ******************** Twilio parameters *************************
 account_sid = os.environ.get("TWILIO_SID")
 auth_token = os.environ.get("TWILIO_TOKEN")
-msg_serv_sid = os.environ.get("TWILIO_MSG_SID")
+msg_serv_sid = os.environ.get("TWILIO_MSG_SERV_SID")
 twilio_phone = os.environ.get("TWILIO_PHONE")
 # ****************************************************************
 
