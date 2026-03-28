@@ -37,7 +37,7 @@ jobs:
           OWM_ENDPOINT: ${{ secrets.OWM_ENDPOINT }}
           TWILIO_SID: ${{ secrets.TWILIO_SID }}
           TWILIO_TOKEN: ${{ secrets.TWILIO_TOKEN }}
-          TWILIO_MSG_SID: ${{ secrets.TWILIO_MSG_SID }}
+          TWILIO_MSG_SERV_SID: ${{ secrets.TWILIO_MSG_SERV_SID }}
           TWILIO_PHONE: ${{ secrets.TWILIO_PHONE }}
 
         run: |
@@ -81,12 +81,12 @@ jobs:
             echo "TWILIO_TOKEN is configured"
           fi
 
-          if [ -z "$TWILIO_MSG_SID" ]; then
-            echo "TWILIO_MSG_SID secret is not set!"
+          if [ -z "$TWILIO_MSG_SERV_SID" ]; then
+            echo "TWILIO_MSG_SERV_SID secret is not set!"
             echo "Go to Settings > Secrets > Actions and add it."
             exit 1
           else
-            echo "TWILIO_MSG_SID is configured"
+            echo "TWILIO_MSG_SERV_SID is configured"
           fi
 
           if [ -z "$TWILIO_PHONE" ]; then
