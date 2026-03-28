@@ -57,6 +57,46 @@ jobs:
             echo "OWM_API_KEY is configured"
           fi
 
+          if [ -z "$OWM_ENDPOINT" ]; then
+            echo "OWM_ENDPOINT secret is not set!"
+            echo "Go to Settings > Secrets > Actions and add it."
+            exit 1
+          else
+            echo "OWM_ENDPOINT is configured"
+          fi
+
+          if [ -z "$TWILIO_SID" ]; then
+            echo "TWILIO_SID secret is not set!"
+            echo "Go to Settings > Secrets > Actions and add it."
+            exit 1
+          else
+            echo "TWILIO_SID is configured"
+          fi
+
+          if [ -z "$TWILIO_TOKEN" ]; then
+            echo "TWILIO_TOKEN secret is not set!"
+            echo "Go to Settings > Secrets > Actions and add it."
+            exit 1
+          else
+            echo "TWILIO_TOKEN is configured"
+          fi
+
+          if [ -z "$TWILIO_MSG_SID" ]; then
+            echo "TWILIO_MSG_SID secret is not set!"
+            echo "Go to Settings > Secrets > Actions and add it."
+            exit 1
+          else
+            echo "TWILIO_MSG_SID is configured"
+          fi
+
+          if [ -z "$TWILIO_PHONE" ]; then
+            echo "TWILIO_PHONE secret is not set!"
+            echo "Go to Settings > Secrets > Actions and add it."
+            exit 1
+          else
+            echo "TWILIO_PHONE is configured"
+          fi
+
           echo ""
           echo "All secrets are configured!"
 
