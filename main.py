@@ -2,14 +2,8 @@ import os
 import requests
 from twilio.rest import Client
 
-# # ******************** My e-mail credentials *********************
-# my_email = os.environ.get("MY_EMAIL")
-# my_password = os.environ.get("MY_EMAIL_PASSWORD")
-# # ****************************************************************
-
 # ******************** Phone credentials *********************
 my_mobile = os.environ.get("MY_MOBILE")
-
 # ****************************************************************
 
 # ******************** Piracicaba lat, lon ***********************
