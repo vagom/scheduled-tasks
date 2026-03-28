@@ -6,6 +6,8 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    environment: Test
+
 
     steps:
       - name: Checkout repository
